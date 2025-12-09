@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+    <style>
+        html,
+        body {
+            visibility: hidden;
+        }
+    </style>
+
+    <script>
+        var pass = prompt("パスワードを入力してください:");
+
+        if (pass === "202512") {
+            // DOM がロードされてから可視化する
+            window.addEventListener("DOMContentLoaded", function () {
+                document.documentElement.style.visibility = "visible";
+                document.body.style.visibility = "visible";
+            });
+        } else {
+            document.write("アクセスできません");
+            document.close();
+        }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>工藤板金株式会社 | 岩手県八幡平市の屋根・外壁・雨樋工事</title>
+    <meta name="description"
+        content="岩手県八幡平市で創業80年以上。屋根板金、外壁工事、雨樋修理、雨漏り調査なら工藤板金株式会社へ。一級技能士による確かな技術とドローン点検などの最新技術で、大切なお住まいを守ります。">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Roboto:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="header-inner">
+            <h1 class="logo">
+                <a href="#">
+                    <span class="logo-sub">岩手県八幡平市の建築板金</span>
+                    <span class="logo-main">工藤板金株式会社</span>
+                </a>
+            </h1>
+            <nav class="nav-pc">
+                <ul>
+                    <li><a href="#services">サービス内容</a></li>
+                    <li><a href="#strengths">選ばれる理由</a></li>
+                    <li><a href="#works">施工事例</a></li>
+                    <li><a href="#faq">よくある質問</a></li>
+                    <li><a href="#company">会社概要</a></li>
+                    <li class="nav-cta"><a href="#contact"><i class="fa-solid fa-envelope"></i> お問い合わせ</a></li>
+                </ul>
+            </nav>
+            <button class="hamburger" id="hamburger" aria-label="メニューを開く">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <nav class="nav-sp" id="nav-sp">
+            <ul>
+                <li><a href="#services">サービス内容</a></li>
+                <li><a href="#strengths">選ばれる理由</a></li>
+                <li><a href="#works">施工事例</a></li>
+                <li><a href="#faq">よくある質問</a></li>
+                <li><a href="#company">会社概要</a></li>
+                <li><a href="#contact">お問い合わせ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <p class="hero-lead">雨・雪・風から大切な住まいを守る<br class="sp-only">建築板金のプロ</p>
+            <h2 class="hero-title">創業80年の技術と信頼<br>次世代へ繋ぐ確かな施工</h2>
+            <p class="hero-desc">
+                岩手県八幡平市を拠点に、金属屋根・外壁・雨樋工事を専門に行っています。<br>
+                伝統の職人技とドローン点検などの最新技術を融合させ、<br class="pc-only">
+                お客様の住まいを長期間守り抜く高品質な施工をお届けします。
+            </p>
+            <div class="hero-cta">
+                <a href="#contact" class="btn btn-primary">無料相談・お見積りはこちら</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section services">
+        <div class="container">
+            <h2 class="section-title">SERVICE<span>事業内容</span></h2>
+            <p class="section-lead">屋根・外壁・雨樋のトラブルはお任せください。<br>小さな修理から大規模な改修まで対応いたします。</p>
+
+            <div class="service-grid">
+                <!-- Service 1 -->
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="https://plus.unsplash.com/premium_photo-1678727226505-184511252d6a?q=80&w=1600&auto=format&fit=crop"
+                            alt="金属屋根工事">
+                    </div>
+                    <div class="service-body">
+                        <h3>金属屋根工事</h3>
+                        <p>ガルバリウム鋼板、立平葺き、横葺きなど、耐久性とデザイン性に優れた金属屋根への張り替え・カバー工法を行います。雪国特有の耐久性重視の施工も得意です。</p>
+                    </div>
+                </div>
+                <!-- Service 2 -->
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1000&auto=format&fit=crop"
+                            alt="金属外壁工事">
+                    </div>
+                    <div class="service-body">
+                        <h3>金属外壁工事</h3>
+                        <p>軽量で断熱性に優れた金属サイディングの施工。古い外壁の上から重ね張りするリフォームも人気です。建物の美観と寿命を延ばします。</p>
+                    </div>
+                </div>
+                <!-- Service 3 -->
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="https://images.unsplash.com/photo-1621262985644-85e683723765?q=80&w=800&auto=format&fit=crop"
+                            alt="雨樋工事">
+                    </div>
+                    <div class="service-body">
+                        <h3>雨樋工事</h3>
+                        <p>雨樋の修理・交換・新設工事。落ち葉詰まりの解消や、雪害で歪んでしまった雨樋の交換など、スムーズな排水環境を整えます。</p>
+                    </div>
+                </div>
+                <!-- Service 4 -->
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="https://plus.unsplash.com/premium_photo-1682144634215-5e60867d4572?q=80&w=800&auto=format&fit=crop"
+                            alt="雨漏り調査・修理">
+                    </div>
+                    <div class="service-body">
+                        <h3>雨漏り調査・修理</h3>
+                        <p>ドローンを用いた高所点検や、経験豊富な職人の目視により雨漏りの原因を特定。古い家屋や複雑な構造の雨漏りも根本から解決します。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Strengths Section -->
+    <section id="strengths" class="section strengths">
+        <div class="container">
+            <h2 class="section-title">STRENGTH<span>選ばれる理由</span></h2>
+            <div class="strength-list">
+                <div class="strength-item">
+                    <div class="strength-icon">
+                        <i class="fa-solid fa-medal"></i>
+                    </div>
+                    <div class="strength-text">
+                        <h3>創業80年以上の<br>技術継承</h3>
+                        <p>祖父の代から受け継がれた板金技術で、古い家屋の複雑な構造や、雪国特有の厳しい環境に適した施工を行います。難易度の高い修繕もお任せください。</p>
+                    </div>
+                </div>
+                <div class="strength-item">
+                    <div class="strength-icon">
+                        <i class="fa-solid fa-user-shield"></i>
+                    </div>
+                    <div class="strength-text">
+                        <h3>有資格者による<br>高品質な施工</h3>
+                        <p>一級建築板金技能士をはじめ、高所作業車、クレーン、溶接など多数の資格を持つ職人が在籍。安全管理を徹底し、確かな品質をお約束します。</p>
+                    </div>
+                </div>
+                <div class="strength-item">
+                    <div class="strength-icon">
+                        <i class="fa-solid fa-drone"></i>
+                    </div>
+                    <div class="strength-text">
+                        <h3>新旧融合の<br>ハイブリッド体制</h3>
+                        <p>伝統的な職人技に加え、ドローンによる屋根点検など最新技術を積極的に導入。精度の高い調査と、効率的で安全な施工を実現しています。</p>
+                    </div>
+                </div>
+                <div class="strength-item">
+                    <div class="strength-icon">
+                        <i class="fa-solid fa-handshake"></i>
+                    </div>
+                    <div class="strength-text">
+                        <h3>安心の直請け<br>アフターフォロー</h3>
+                        <p>お客様と直接取引することで、中間マージンをカットし適正価格で提供。施工後も保証書の発行や定期点検など、末長くサポートいたします。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Works Section -->
+    <section id="works" class="section works">
+        <div class="container">
+            <h2 class="section-title">WORKS<span>施工事例</span></h2>
+            <div class="works-grid">
+                <div class="work-item">
+                    <div class="work-img-box">
+                        <span class="badge">屋根工事</span>
+                        <img src="https://plus.unsplash.com/premium_photo-1678727226505-184511252d6a?q=80&w=800&auto=format&fit=crop"
+                            alt="施工事例1">
+                    </div>
+                    <div class="work-info">
+                        <h4>八幡平市 K様邸 屋根葺き替え</h4>
+                        <p>古くなったトタン屋根から、耐久性の高いガルバリウム鋼板へ葺き替え。雪下ろしが楽になりました。</p>
+                    </div>
+                </div>
+                <div class="work-item">
+                    <div class="work-img-box">
+                        <span class="badge">外壁工事</span>
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=800&auto=format&fit=crop"
+                            alt="施工事例2">
+                    </div>
+                    <div class="work-info">
+                        <h4>盛岡市 S様邸 外壁カバー工法</h4>
+                        <p>既存のサイディングの上から金属サイディングを施工。断熱性が向上し、冬も暖かく過ごせます。</p>
+                    </div>
+                </div>
+                <div class="work-item">
+                    <div class="work-img-box">
+                        <span class="badge">雨樋修理</span>
+                        <img src="https://images.unsplash.com/photo-1621262985644-85e683723765?q=80&w=800&auto=format&fit=crop"
+                            alt="施工事例3">
+                    </div>
+                    <div class="work-info">
+                        <h4>八幡平市 店舗雨樋交換</h4>
+                        <p>雪害で破損した雨樋を全交換。強度のある金具を使用し、雪に強い仕様にしました。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section testimonials">
+        <div class="container">
+            <h2 class="section-title">VOICE<span>お客様の声</span></h2>
+            <div class="voice-list">
+                <div class="voice-item">
+                    <div class="voice-head">
+                        <div class="voice-icon"><i class="fa-solid fa-user"></i></div>
+                        <div class="voice-meta">
+                            <h4>八幡平市 50代男性</h4>
+                            <span class="stars">★★★★★</span>
+                        </div>
+                    </div>
+                    <p class="voice-text">
+                        雨漏りで困っていましたが、ドローンで屋根の状態を見せてくれて説明がとても分かりやすかったです。職人さんの対応も丁寧で、安心してお任せできました。
+                    </p>
+                </div>
+                <div class="voice-item">
+                    <div class="voice-head">
+                        <div class="voice-icon"><i class="fa-solid fa-user"></i></div>
+                        <div class="voice-meta">
+                            <h4>盛岡市 60代女性</h4>
+                            <span class="stars">★★★★★</span>
+                        </div>
+                    </div>
+                    <p class="voice-text">
+                        地元の業者さんにお願いしたくて探していました。予算に合わせていくつかのプランを提案してくれたのが良かったです。仕上がりもとても綺麗で満足しています。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="section faq">
+        <div class="container">
+            <h2 class="section-title">FAQ<span>よくある質問</span></h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <h3 class="faq-question">見積もりは無料ですか？</h3>
+                    <div class="faq-answer">
+                        <p>はい、現地調査・お見積もりは完全に無料です。お気軽にご相談ください。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">小さな修理でもお願いできますか？</h3>
+                    <div class="faq-answer">
+                        <p>もちろんです。雨樋の部品交換や、屋根の小さなひび割れ補修など、規模に関わらず丁寧に対応いたします。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">対応エリアはどこまでですか？</h3>
+                    <div class="faq-answer">
+                        <p>八幡平市を中心に、盛岡市、滝沢市など岩手県北・県央エリアに対応しております。詳細はお問い合わせください。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Company Section -->
+    <section id="company" class="section company">
+        <div class="container">
+            <h2 class="section-title">COMPANY<span>会社概要</span></h2>
+            <div class="company-wrapper">
+                <div class="company-info">
+                    <dl>
+                        <dt>会社名</dt>
+                        <dd>工藤板金 株式会社</dd>
+                        <dt>代表者</dt>
+                        <dd>代表取締役 工藤 良文</dd>
+                        <dt>所在地</dt>
+                        <dd>〒028-7113 岩手県八幡平市平笠19-116</dd>
+                        <dt>設立</dt>
+                        <dd>2021年（創業1940年）</dd>
+                        <dt>従業員数</dt>
+                        <dd>6名（一級建築板金技能士 3名）</dd>
+                        <dt>事業内容</dt>
+                        <dd>建築板金工事全般（屋根・外壁・雨樋）、雨漏り修理、ドローン点検</dd>
+                        <dt>保有資格</dt>
+                        <dd>一級・二級建築板金技能士、高所作業車運転技能講習、小型移動式クレーン運転技能講習、アーク溶接特別教育 他</dd>
+                    </dl>
+                </div>
+                <div class="company-map">
+                    <!-- Google Map Embed -->
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3060.929496569795!2d141.07278097582088!3d39.898210771527665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f85149cf419cd4f%3A0x8a33db3e9eadb449!2z44CSMDI4LTcxMTMg5bKp5omL55yM5YWr5bmh5bmz5biC5bmz56yg56ys77yR77yZ5Zyw5Ymy77yR77yZ!5e0!3m2!1sja!2sjp!4v1765287224723!5m2!1sja!2sjp"
+                        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2 class="section-title">CONTACT<span>お問い合わせ</span></h2>
+            <p class="contact-lead">お見積もり・ご相談は無料です。<br>お急ぎの方はお電話にてご連絡ください。</p>
+
+            <div class="contact-methods">
+                <div class="contact-tel">
+                    <p class="tel-label">お電話でのご相談</p>
+                    <a href="tel:0195-76-4231" class="tel-number"><i class="fa-solid fa-phone"></i> 0195-76-4231</a>
+                    <p class="tel-time">受付時間 8:00〜18:00（日曜定休）</p>
+                </div>
+                <div class="contact-form-wrapper">
+                    <p class="form-label">メールフォーム</p>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="name">お名前 <span class="required">必須</span></label>
+                            <input type="text" id="name" name="name" placeholder="例：八幡平 太郎" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="tel">電話番号 <span class="required">必須</span></label>
+                            <input type="tel" id="tel" name="tel" placeholder="例：090-1234-5678" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">メールアドレス</label>
+                            <input type="email" id="email" name="email" placeholder="例：info@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="category">ご相談内容</label>
+                            <select id="category" name="category">
+                                <option value="">選択してください</option>
+                                <option value="屋根工事">屋根工事について</option>
+                                <option value="外壁工事">外壁工事について</option>
+                                <option value="雨樋工事">雨樋工事について</option>
+                                <option value="雨漏り修理">雨漏り修理について</option>
+                                <option value="その他">その他</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">お問い合わせ詳細</label>
+                            <textarea id="message" name="message" rows="5"
+                                placeholder="ご質問やご希望の連絡時間帯などをご記入ください"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-submit">送信する</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-logo">工藤板金 株式会社</div>
+            <ul class="footer-nav">
+                <li><a href="#services">サービス内容</a></li>
+                <li><a href="#strengths">選ばれる理由</a></li>
+                <li><a href="#works">施工事例</a></li>
+                <li><a href="#company">会社概要</a></li>
+                <li><a href="#contact">お問い合わせ</a></li>
+            </ul>
+            <p class="copyright">&copy; 2025 Kudou Bankin. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Sticky Footer (Mobile Only) -->
+    <div class="sticky-footer">
+        <a href="tel:0195-00-0000" class="sticky-btn tel-btn">
+            <i class="fa-solid fa-phone"></i> 電話で相談
+        </a>
+        <a href="#contact" class="sticky-btn mail-btn">
+            <i class="fa-solid fa-envelope"></i> フォーム相談
+        </a>
+    </div>
+
+    <!-- Back to Top Button -->
+    <a href="#" id="back-to-top" class="back-to-top" aria-label="トップに戻る">
+        <i class="fa-solid fa-chevron-up"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
