@@ -3,41 +3,39 @@
 
 <head>
 
-    <style>
-        html,
-        body {
-            visibility: hidden;
-        }
-    </style>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <title>期間限定ページ</title>
 
-    <script>
-        var pass = prompt("パスワードを入力してください:");
+        <script>
+            const expireDate = new Date("2025-12-31T23:59:59+09:00");
+            const now = new Date();
 
-        if (pass === "202512") {
-            // DOM がロードされてから可視化する
-            window.addEventListener("DOMContentLoaded", function () {
-                document.documentElement.style.visibility = "visible";
-                document.body.style.visibility = "visible";
-            });
-        } else {
-            document.write("アクセスできません");
-            document.close();
-        }
-    </script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>工藤板金株式会社 | 岩手県八幡平市の屋根・外壁・雨樋工事</title>
-    <meta name="description"
-        content="岩手県八幡平市で創業80年以上。屋根板金、外壁工事、雨樋修理、雨漏り調査なら工藤板金株式会社へ。一級技能士による確かな技術とドローン点検などの最新技術で、大切なお住まいを守ります。">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Roboto:wght@700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <!-- Font Awesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head>
+            if (now > expireDate) {
+                document.addEventListener("DOMContentLoaded", () => {
+                    document.body.innerHTML = `
+          <div style="text-align:center;margin-top:100px;">
+            <h1>このページの公開は終了しました</h1>
+            <p>お問い合わせは別途ご連絡ください。</p>
+          </div>
+        `;
+                });
+            }
+        </script>
+        <title>工藤板金株式会社 | 岩手県八幡平市の屋根・外壁・雨樋工事</title>
+        <meta name="description"
+            content="岩手県八幡平市で創業80年以上。屋根板金、外壁工事、雨樋修理、雨漏り調査なら工藤板金株式会社へ。一級技能士による確かな技術とドローン点検などの最新技術で、大切なお住まいを守ります。">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Roboto:wght@700&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <!-- Font Awesome for Icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </head>
 
 <body>
 
